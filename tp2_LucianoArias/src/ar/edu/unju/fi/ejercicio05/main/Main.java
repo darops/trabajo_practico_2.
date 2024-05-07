@@ -3,8 +3,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import ar.edu.unju.fi.ejercicio01.model.producto.categoria;
-import ar.edu.unju.fi.ejercicio01.model.producto.origenfabricacion;
+import ar.edu.unju.fi.ejercicio01.model.Producto.Categoria;
+import ar.edu.unju.fi.ejercicio01.model.Producto.OrigenFabricacion;
 import ar.edu.unju.fi.ejercicio05.model.PagoEfectivo;
 import ar.edu.unju.fi.ejercicio05.model.PagoTarjeta;
 import ar.edu.unju.fi.ejercicio05.model.Producto;
@@ -14,9 +14,7 @@ public class Main {
         List <Producto> lista = new ArrayList<>();
         boolean band=false;
         int op = 0;
-        
         precarga(lista);
-        
         try {
         	do {
         		do {

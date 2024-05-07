@@ -58,6 +58,7 @@ public class Main {
 						System.out.print("Elija una opcion: ");
 						op=scanner.nextInt();
 					} while (op<1 && op>4);
+					
 					switch(op) {
 						case 1: origen = Producto.OrigenFabricacion.ARGENTINA; 
 							break;
@@ -68,8 +69,10 @@ public class Main {
 						case 4: origen = Producto.OrigenFabricacion.URUGUAY; 
 							break;
 					}
+					
 					op=0;
 					Producto.Categoria categori= Producto.Categoria.TELEFONIA;;
+					
 					do {
 						System.out.println("\n--Categoria--");
 						System.out.println("1. TELEFONIA");
@@ -90,7 +93,9 @@ public class Main {
 							break;
 					}
 					Producto producto = new Producto(codigo, descripcion, precio, origen, categori);
+					
 					productos.add(producto);
+					
 					System.out.println("Se agrego el producto correctamente!");
 					break;
 				case 2: System.out.println("\n--Mostrar Productos--");
@@ -146,6 +151,7 @@ public class Main {
 									System.out.print("Elija una opcion: ");
 									op = scanner.nextInt();
 								} while (op<0 && op>5);
+								
 								switch(op) {
 									case 1: origennuevo = Producto.OrigenFabricacion.ARGENTINA; 
 										break;
