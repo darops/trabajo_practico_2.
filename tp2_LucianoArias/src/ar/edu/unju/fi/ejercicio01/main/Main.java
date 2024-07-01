@@ -58,7 +58,6 @@ public class Main {
 						System.out.print("Elija una opcion: ");
 						op=scanner.nextInt();
 					} while (op<1 && op>4);
-					
 					switch(op) {
 						case 1: origen = Producto.OrigenFabricacion.ARGENTINA; 
 							break;
@@ -68,11 +67,14 @@ public class Main {
 							break;
 						case 4: origen = Producto.OrigenFabricacion.URUGUAY; 
 							break;
-					}
-					
+					}					
 					op=0;
 					Producto.Categoria categori= Producto.Categoria.TELEFONIA;;
 					
+
+					op=0;
+					Producto.Categoria categori= Producto.Categoria.TELEFONIA;
+
 					do {
 						System.out.println("\n--Categoria--");
 						System.out.println("1. TELEFONIA");
