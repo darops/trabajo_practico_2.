@@ -67,9 +67,14 @@ public class Main {
 							break;
 						case 4: origen = Producto.OrigenFabricacion.URUGUAY; 
 							break;
-					}
+					}					
+					op=0;
+					Producto.Categoria categori= Producto.Categoria.TELEFONIA;;
+					
+
 					op=0;
 					Producto.Categoria categori= Producto.Categoria.TELEFONIA;
+
 					do {
 						System.out.println("\n--Categoria--");
 						System.out.println("1. TELEFONIA");
